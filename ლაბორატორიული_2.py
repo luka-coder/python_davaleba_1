@@ -1,0 +1,122 @@
+print("დავალება---1")
+number = int(input("შეიტანეთ რიხვი: "))
+if number>0:
+    print("რიცხვი დადებითია!!!")
+print("დავალება---2")
+number = int(input("შეიტანეთ რიხვი: "))
+if number%10 == 0:
+    print("რიცხვი ბოლოვდება 0-ით")
+else:
+    print("რიცხვი არ ბოლოვდება 0-ით")
+print("დავალება---3")
+number1 = int(input("შეიტანეთ პირველი რიხვი: "))
+number2 = int(input("შეიტანეთ მეორე რიხვი: "))
+if number1>10 and number2>10:
+    s = (number1 + number2)/2
+    print("საშუალო არითმეტიკული = ",s)
+else:
+    m = number1*number2
+    print("შეტანილი რიცხვების ნამრავლია = ",m)
+print("დავალება---4")
+number = int(input("შეიტანეთ რიხვი: "))
+if number>0:
+    print(f"რიცხვი {number} დადებითია")
+elif number<0:
+    m = number1*number2
+    print(f"რიცხვი {number} უარყოფითია")
+else:
+    print("რიცხვი ნულის ტოლია")
+print("დავალება---6")
+number = int(input("შეიყვანეთ რიცხვი: "))
+s = str(number)
+last = int(s[-1])
+print("შეტანილი რიცხვის ბოლო ციფრი: ",last)
+print("დავალება---7")
+year = int(input("შეიყვანეთ წელი: "))
+if year%4==0:
+  if year%100==0:
+    if year%400==0:
+      print("ნაკიანია")
+    else:
+      print("არ არის ნაკიანი")
+  else:
+    print("ნაკიანია")
+else:
+  print("არ არის ნაკია")
+print("დავალება---1")
+i = 15
+while i<125:
+  i+=5
+  print(i)
+print("დავალება---2")
+i = 200
+while i>25:
+  if i%8==0:
+    print(i)
+  i-=1
+print("დავალება---3")
+a = int(input("პირველი რიცხვი: "))
+b = int(input("მეორე რიცხვი: "))
+n = 0
+for i in range(1, min(a, b)+1): 
+    if a%i==b%i==0: 
+        n+=1
+        print("შეყვანილი რიცხვების ",n,end=";")
+        print()
+print("დავალება---4")
+for x in range(10):
+  x = int(input("რიცხვი: "))
+print("დავალება---5")
+sum = 0
+for i in range(101):
+  if i%2==0:
+    sum = sum+i
+print("ლუწი რიცხვების ჯამი 100-მდე: ",sum)
+print("დავალება---6")
+for i in range(1500,2100):
+  if i%5==0 and i%7==0:
+    print("5-ის და 7-ის ჯერადი რიცხვები: ",i)
+print("დავალება---7")
+sum = 0
+for i in range(1500,2100):
+  if i%5==0 and i%7==0:
+    sum+=i
+print("5-ის და 7-ის ჯერადი რიცხვები-ის ჯამი: ",sum)
+print("დავალება---8")
+sum = 0
+for i in range(1500,2100):
+  if i%5==0 and i%7==0:
+    while sum<20000:
+      sum+=i
+print(sum)
+print("დავალება---9")
+n = 0
+for i in range(1500,2100):
+  if i%5==0:
+    n+=1
+print(n)
+print("დავალება---10")
+for i in range(15,150):
+  if i%5==0:
+    if i==50 or i == 75 or i==80:
+      continue
+    print(i)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
